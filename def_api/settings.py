@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
-import ree
+import re
 
 if os.path.exists('env.py'):
     import env
@@ -64,6 +64,7 @@ DEBUG = 'DEV' in os.environ
 ALLOWED_HOSTS = [
    os.environ.get('ALLOWED_HOST'),
    'localhost',
+   '8000-benjackson3811-drfapi-hpskaf8bwnr.ws-eu104.gitpod.io',
 ]
 
 
